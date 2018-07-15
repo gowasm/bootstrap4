@@ -2,7 +2,7 @@
 
 - Depends
   - [GopherJS](htts://github.com/gopherjs/gopherjs)
-  - [Vecty](https://github.com/gopherjs/vecty)
+  - [Vecty](https://github.com/gowasm/vecty)
   - [bootstrap4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 ## Policy

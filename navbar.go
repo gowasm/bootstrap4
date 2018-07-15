@@ -3,9 +3,9 @@ package bootstrap4
 //<nav class="navbar navbar-expand-lg navbar-light bg-light">
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
-	"github.com/gopherjs/vecty/prop"
+	"github.com/gowasm/vecty"
+	"github.com/gowasm/vecty/elem"
+	"github.com/gowasm/vecty/prop"
 )
 
 // Navbar ...

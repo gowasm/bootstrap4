@@ -1,6 +1,6 @@
 package bootstrap4
 
-import "github.com/gopherjs/vecty"
+import "github.com/gowasm/vecty"
 
 var (
 	Show                 = vecty.Class("show")

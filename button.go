@@ -1,9 +1,9 @@
 package bootstrap4
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
-	"github.com/gopherjs/vecty/prop"
+	"github.com/gowasm/vecty"
+	"github.com/gowasm/vecty/elem"
+	"github.com/gowasm/vecty/prop"
 )
 
 // Button ...
@@ -44,7 +44,7 @@ func (c *Button) Render() vecty.ComponentOrHTML {
 			vecty.MarkupIf(len(c.Title) > 0, vecty.Attribute("title", c.Title)),
 			vecty.MarkupIf(c.TabIndex != 0, vecty.Attribute("tabindex", c.TabIndex)),
 			vecty.ClassMap{
-				"btn": true,
+				"btn":                    true,
 				"btn-" + c.Size.String(): len(c.Size) > 0,
 				"btn-block":              c.Block,
 				"active":                 c.Active,
@@ -95,7 +95,7 @@ func (c *ButtonLinks) Render() vecty.ComponentOrHTML {
 			vecty.MarkupIf(len(c.Title) > 0, vecty.Attribute("title", c.Title)),
 			vecty.MarkupIf(c.TabIndex != 0, vecty.Attribute("tabindex", c.TabIndex)),
 			vecty.ClassMap{
-				"btn": true,
+				"btn":                    true,
 				"btn-" + c.Size.String(): len(c.Size) > 0,
 				"btn-block":              c.Block,
 				"disabled":               c.Disabled,

@@ -1,9 +1,9 @@
 package bootstrap4
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
-	"github.com/gopherjs/vecty/prop"
+	"github.com/gowasm/vecty"
+	"github.com/gowasm/vecty/elem"
+	"github.com/gowasm/vecty/prop"
 )
 
 // Card ...
@@ -22,7 +22,7 @@ func (c *Card) Render() vecty.ComponentOrHTML {
 		vecty.Markup(
 			vecty.MarkupIf(len(c.ID) > 0, prop.ID(c.ID)),
 			vecty.ClassMap{
-				"card": true,
+				"card":                            true,
 				"bg-" + c.BackgroundKind.String(): len(c.BackgroundKind) > 0,
 				"border-" + c.BorderKind.String(): len(c.BorderKind) > 0,
 			},

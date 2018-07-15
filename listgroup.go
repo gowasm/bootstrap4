@@ -1,9 +1,9 @@
 package bootstrap4
 
 import (
-	"github.com/gopherjs/vecty"
-	"github.com/gopherjs/vecty/elem"
-	"github.com/gopherjs/vecty/prop"
+	"github.com/gowasm/vecty"
+	"github.com/gowasm/vecty/elem"
+	"github.com/gowasm/vecty/prop"
 )
 
 // ListGroup ...
@@ -51,8 +51,8 @@ func (c *ListGroupItem) Render() vecty.ComponentOrHTML {
 			vecty.ClassMap{
 				"list-group-item":                        true,
 				"list-group-item-" + c.ItemKind.String(): len(c.ItemKind) > 0,
-				"active":   c.Active,
-				"disabled": c.Disabled,
+				"active":                                 c.Active,
+				"disabled":                               c.Disabled,
 			},
 		),
 		c.Markup,
@@ -107,8 +107,8 @@ func (c *ListGroupItemAction) Render() vecty.ComponentOrHTML {
 			vecty.ClassMap{
 				"list-group-item":                    true,
 				"list-group-item-" + c.Kind.String(): len(c.Kind) > 0,
-				"active":   c.Active,
-				"disabled": c.Disabled,
+				"active":                             c.Active,
+				"disabled":                           c.Disabled,
 			},
 		),
 		c.Markup,
